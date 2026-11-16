@@ -197,8 +197,8 @@ const config = {
   // watchman: true,
 };
 
-export default {
+export default ({
   preset: 'ts-jest',
   testEnvironment: 'node',
-}
+});
 
