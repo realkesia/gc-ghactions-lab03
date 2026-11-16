@@ -17,10 +17,10 @@ jobs:
           node-version: ${{matrix.node-version}}
           
       - name: Install dependencies
-        run: npm install typescript --save-dev
+        run: npm install 
         
       - name: Run the tests
-        run: npm test
+        run: npx jest --coverage
       
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v5
